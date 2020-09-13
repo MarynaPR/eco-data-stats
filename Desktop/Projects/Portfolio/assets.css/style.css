@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary-color: whitesmoke;
+    --secondary-color: darkslategray;
+    --primary-color-transparent: black;
+    --secondary-color-transparent: darkgrey;
+}
+header {
+    padding: 20px 35px;
+    justify-content: space-around;
+    flex-wrap: wrap; 
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: var(--secondary-color-transparent);
+    background-size: cover;
+    background-position: left;
+    background-attachment: fixed;
+    background-position: 80%;
+    z-index: 9999;
+    align-items: left;
+    display: flex; 
+    
+}
+header h1 {
+    font-weight: bold;
+    margin: 0;
+    font-size: 40px;
+    color: var(--primary-color-transparent);
+}
+header nav {
+    margin: 10px 0;
+}
+
+header a {
+    text-decoration-line: underline;
+    text-decoration-color: floralwhite;
+    color: var(--primary-color-transparent);
+}
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none; 
+}
+header nav ul li a {
+    margin: 0 35px;
+    font-weight: bold;
+    font-size: 2vw;
+  }
+
+body {
+    background-color: var(--primary-color);
+}
+
+h1 {
+    color: black;
+    text-align: center; 
+}
+
+div {
+    font-family: verdana;
+    font-size: 30px;
+    border: 3px solid darkslategray;
+    padding: 20px;
+}
+.intro {
+    background-size: cover;
+    text-align: right;
+}
+p {
+text-align: right;
+}
+.section {
+    padding: 10px;
+}
+.section-title {
+    font-size: 48px;
+    border-bottom: 3px solid;
+    color: var(--secondary-color);
+    text-align: center;
+    margin: 0 auto 20px auto;
+    padding-bottom: 20px;
+    width: 30%;
+}
+
+.img { 
+    background-image: url(../assets.css/IMG_8886.jpeg);
+    width: 100%;
+}
+.flex-row {
+    display: flex;
+}
+.work-done {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.project {
+    margin: 20px;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    flex: 1;
+}
+.project-img {
+    width: 100%;
+    min-height: 300px;
+    background-size: cover;
+    display: flex;
+    padding: 15px;
+    align-items: flex-end;
+    position: relative;
+    background-position: top;
+    overflow: hidden;
+}
+.project-1 {
+ background-image: url(../assets.css/hero-bg\ copy.jpg);
+}
+.project-2 {
+    background-image: url(../assets.css/digital-marketing-meeting\ copy.jpg)
+}
+.project-3 {
+    background-image: url(../assets.css/IMG_7882.jpeg);
+}
+
+footer {
+        background: var(--secondary-color-transparent);
+        width: 100%;
+        padding: 20px 35px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        display: flex;
+}
+footer h2 {
+        font-size: 30px;
+        margin: 0;
+}
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+    header nav ul li a {
+        font-size: 20px;
+    }
+    footer h6 {
+        text-align: center;
+        width: 100%;
+    }
+    .section-title {
+        width: 80%;
+    }
+    .contact-me iframe {
+        flex: 1 100%;
+    }
+}
+@media screen and (max-width: 768px) {
+    section {
+        padding: 30px 15px;
+    }
+
+    }
+    .img {
+        size: 200px;
+        flex: 0 15%;
+        margin-right: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .step-text {
+        flex: 100%;
+    }
+    .service-grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+    .service-grid-item.cancel {
+        transform: none;
+        writing-mode: unset;
+        grid-column: 1 / -1;
+        grid-row: -1;
+    }
+}
+@media screen and (max-width: 575px) {
+    .section-title {
+        width: 95%;
+    }
+    .intro p {
+        width: 100%;
+    }
+    .contact-me > * {
+        flex: 0 100%;
+    }
+}
+
