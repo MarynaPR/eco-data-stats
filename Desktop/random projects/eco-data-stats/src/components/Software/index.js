@@ -1,12 +1,15 @@
 import React from 'react';
-
+import reportImg from "../../assets/cover/report.png";
 function Software() {
 
 
     return (
-        <div>
-            project
-        </div>
+        <section>
+            <h3> See EcoDataStats Live</h3>
+            <p>Interact with live dashboards in our gallery</p>
+            <p><a href="https://app.powerbi.com/links/SfvIwN5wjL?ctid=9cce8368-101c-4cb9-b1c6-20c964379df1&pbi_source=linkShare">View live Dashbord Gallery >></a></p>
+            <img src={reportImg} className="my-2" style={{ width: "100%" }} alt="cover" />
+        </section>
     );
 };
 

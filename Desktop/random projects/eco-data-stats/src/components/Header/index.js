@@ -7,9 +7,8 @@ function Header(props) {
   return (
     <header className="flex-row space-between px-1">
       <div className="logo">
-        <img src={logo} alt="logo" />
+        <a href="/"><img src={logo} alt="logo" /> </a>
         <h2>ECO DATA STATS</h2>
-        {/* <img src={coverImage} alt="wooden background"></img> */}
         {props.children}
       </div>
     </header>
