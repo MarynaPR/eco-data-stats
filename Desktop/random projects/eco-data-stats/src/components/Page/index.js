@@ -1,5 +1,6 @@
 import React from 'react';
 import PageContent from '../PageContent';
+import Home from '../Home';
 import About from '../About';
 import Software from '../Software';
 import Contact from '../Contact';
@@ -10,6 +11,8 @@ function Page({ currentPage }) {
 
   const renderPage = () => {
     switch (currentPage.name) {
+      case 'home':
+        return <Home />;
       case 'about':
         return <About />;
       case 'software':
@@ -19,7 +22,7 @@ function Page({ currentPage }) {
       case 'signup':
         return <Signup />;
       default:
-        return <About />;
+        return <Home />;
     }
   };
 
