@@ -1,4 +1,5 @@
-git # eco-data-stats
+# eco-data-stats
+
 
 ![license](https://img.shields.io/badge/MIT-License-brightgreen)
 
