@@ -156,6 +156,13 @@ header {
   /* min-width: 100%; */
 }
 
+a.home {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+}
+
 .logo {
   display: flex;
   flex-wrap: wrap;
